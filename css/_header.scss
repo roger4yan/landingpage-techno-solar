@@ -1,0 +1,126 @@
+header {
+    width: 100%;
+    
+}
+
+
+.headerContent {      
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;      
+    background-color: #0c213581; 
+    padding: 10px 50px;
+}
+
+.headerLogo img {
+    width: 230px;    
+}
+
+.headerMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.headerMenu a:hover {
+    color: #fff;
+    animation: scaleItem 0.8s infinite alternate;
+}
+
+@keyframes scaleItem {
+    from {
+        transform: scale(1);
+    }
+    to { 
+        transform: scale(1.3);
+    }
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.buttomMenu {
+    display: none;    
+}
+
+.menuButton {
+    border: 0;
+    border-radius: 4px;
+    padding: 2px;
+    cursor: pointer;
+    background-color: #ffffff00;
+
+    i{
+        color: #fff;
+    }
+}
+
+//NAV2
+.overlay {
+    display: none;
+    background-color: #0c213581;
+    z-index: 9;
+    position: fixed;
+    width: 0;
+    height: 20%;  
+    overflow-x: hidden; 
+    transition: all 0.5s;
+    margin-top: 52.5px;    
+}
+
+.overlayContent {
+    position: relative;
+    width: 100%;
+    top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.overlayContent a {    
+    font-size: 20px;
+    transition: 0.3s;    
+}
+
+.overlay .closeBtn {    
+    font-size: 40px;
+    position: absolute;    
+    right: 17px;
+}
+
+@media screen and (max-width: 768px) {  
+    .headerLogo img{
+        width: 150px;        
+    }
+
+    .headerContent {
+        padding: 10px 14px;
+        width: 100%;                          
+    }       
+    
+    .headerContent .headerMenu a {
+        display: none;
+    }
+
+    .buttomMenu {
+        display: block;
+               
+    }
+
+    .overlay {
+        display: flex;        
+    }
+}

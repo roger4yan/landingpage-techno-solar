@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <title>Portifolio</title>
+</head>
+<body>
+    <!--HEADER-->
+    <div class="bgHome">
+        <header>            
+            <nav class="headerContent" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1250">              
+                <div class="headerLogo">
+                <img src="assets/LOGONAME7.png" alt="Logo">
+                </div>                
+                <div class="headerMenu">
+                    <a href="#titulo">Home</a>
+                    <a href="#tituloUm">Sobre</a>
+                    <a href="#tituloDois">Serviços</a>                                                                                 
+                </div> 
+                
+                <div class="buttomMenu">
+                    <button class="menuButton" onclick="openMenu()">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </button>
+                </div>
+            </nav>
+            
+            <nav class="headerContentDois">
+                <div id="menu" class="overlay">                    
+                    <div class="overlayContent">
+                        <a href="#titulo">Home</a>
+                        <a href="#tituloUm">Sobre</a>
+                        <a href="#tituloDois">Serviços</a>
+                    </div>
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeMenu()">&times;</a>
+                </div>
+            </nav>
+            
+            <main id="titulo" class="hero container">
+                <div class="heroDescription" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1250">
+                    <h1>
+                        Energize o futuro com 
+                        <span style="--i:0;" data-text="EnergiaSolar.">EnergiaSolar.</span>
+                        <span style="--i:1;" data-text="TechnoSolar.">TechnoSolar.</span>                        
+                    </h1>                                     
+                </div> 
+                <div class="btnContact" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1250">
+                    <a href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+                       target="_blank">Entre em contato
+                    </a> 
+                </div>                                            
+            </main>            
+        </header>
+    </div>
+    
+    <!--NUMBERS-->
+    <section class="numbers container">
+        <div class="numberIcon">
+            <img src="assets/solar-panel.png" alt="">
+            <div class="numberInfo">
+                <h2>200+</h2>
+                <P>Instalações</P>
+            </div>
+        </div>
+        <div class="numberIcon">
+            <img src="assets/solar-energy.png" alt="">
+            <div class="numberInfo">
+                <h2>100 MW</h2>
+                <P>Em operação</P>
+            </div>
+        </div>
+        <div class="numberIcon">
+            <img src="assets/ecological.png" alt="">
+            <div class="numberInfo">
+                <h2>120 GWh</h2>
+                <P>Energia limpa produzida</P>
+            </div>
+        </div>
+    </section>
+
+    <!--ABOUT-->
+    <section class="about">
+        <div id="tituloUm" class="aboutContent container">
+            <div class="imageAbout" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1250">
+                <img src="assets/about.png" alt="Imagem sobre TechnoSolar">
+            </div>
+            <div class="aboutDescription" data-aos="zoom-out-left" data-aos-delay="100" data-aos-duration="1250">
+                <h2>QUEM SOMOS NÓS</h2>
+                <p>
+                    Bem-vindo à TechnoSolar, sua escolha confiável para serviços especializados 
+                    em instalação de sistemas fotovoltaicos. Dedicamos nossa expertise exclusivamente à 
+                    implementação eficiente e confiável de soluções solares, 
+                    proporcionando uma transição suave para uma energia mais limpa.
+                </p>
+                <p>
+                    Nossa missão é simplificar o caminho para a energia solar. Especializamo-nos 
+                    exclusivamente na instalação de sistemas fotovoltaicos 
+                    para residências e empresas, assegurando uma abordagem focada e eficaz.
+                </p>
+            </div>            
+        </div>
+    </section>
+        
+    <!--SERVICES-->
+    <section class="services container" id="tituloDois">
+        <div class="servicesContent container" data-aos="zoom-out" data-aos-delay="150" data-aos-duration="1250">
+            <h2>Serviços</h2>
+            <p>Nossa equipe altamente qualificada está pronta para oferecer serviços precisos e 
+               eficientes de sistemas fotovoltaicos em sua residência ou empresa. 
+               Conte conosco para transformar seu espaço com energia limpa e renovável.
+            </p>
+        </div>
+
+        <section>
+            <div class="slider">                
+                <div class="item">                    
+                    <h2>MANUTENÇÃO</h2>
+                    <img src="assets/manutencao.png" alt="instalação">
+                </div>
+                <div class="item">                    
+                    <h2>INSTALAÇÃO</h2>
+                    <img src="assets/instalacao.jpg" alt="instalação">
+                </div>
+                <div class="item">                    
+                    <h2>LIMPEZA</h2>
+                    <img src="assets/limp.png" alt="instalação">
+                </div>
+                <button id="next">></button>
+                <button id="prev"><</button>
+            </div>                
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footerIcons">
+            <a href="https://www.instagram.com/techno_solar/" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+        </div>
+
+        <div>
+            <img src="assets/chapo.png" alt="Logo TechnoSolar">
+        </div>
+
+        <p>Copyright 2024 | Desensolvido por Roger Yan ||
+            <a href="https://www.flaticon.com/free-icons/solar-panel" title="solar panel icons">Solar panel icons created by Freepik - Flaticon || </a>
+
+            <a href="https://www.flaticon.com/free-icons/ecology" title="ecology icons">Ecology icons created by BomSymbols - Flaticon ||</a>
+
+            <a href="https://www.flaticon.com/free-icons/power-industry" title="power industry icons">Power industry icons created by Assia Benkerroum  - Flaticon || </a>
+
+            <a href="http://www.freepik.com">Desenhado por rawpixel.com / Freepik</a>
+        </p>
+    </footer>
+
+    <!--BUTTON WHATSAPP-->
+    <a href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btnWhatsapp" target="_blank">
+        <img src="assets/whatssapp.svg" alt="Botão whatssapp">        
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
