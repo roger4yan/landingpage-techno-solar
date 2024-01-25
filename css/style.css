@@ -369,7 +369,7 @@ header {
   margin-top: 15px;
 }
 .item h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #next, #prev {
@@ -381,6 +381,7 @@ header {
   font-size: xxx-large;
   font-weight: bold;
   left: 200px;
+  cursor: pointer;
 }
 
 #next {
